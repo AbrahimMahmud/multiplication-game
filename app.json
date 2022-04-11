@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "Multiplication Game",
+    "slug": "Multiplication Game",
+    "privacy": "public",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/gamelogo.png",
+    "splash": {
+      "image": "./assets/gamelogo.png",
+      "backgroundColor": "#B6E3FC"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptivegamelogo.png",
+        "backgroundColor": "#B6E3FC"
+      }
+    },
+    "description": "A simple multiplication game."
+  }
+}
