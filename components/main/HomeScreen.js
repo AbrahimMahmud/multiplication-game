@@ -14,6 +14,7 @@ import firebase from "firebase";
 import { useFonts } from "@expo-google-fonts/lato";
 
 export default function HomeScreen() {
+  getScore();
   let [fontsLoaded, error] = useFonts({
     "Lato-Bold": require("../fonts/Lato/Lato-Bold.ttf"),
   });
@@ -31,7 +32,6 @@ export default function HomeScreen() {
       alert(err.message);
     }
   }
-  getScore();
   const navigation = useNavigation();
   return (
     <View style={{ flex: 1, backgroundColor: "#B6E3FC", alignItems: "center" }}>
@@ -45,16 +45,28 @@ export default function HomeScreen() {
       >
         Multiplication Game
       </Text>
-      <Text
+      <TouchableOpacity
         style={{
           fontFamily: "Lato-Bold",
           fontSize: 18,
           color: "#4F37C1",
           paddingTop: 20,
         }}
+        onPress={() => {
+          getScore();
+        }}
       >
-        Previous Game Score: {prevScore}
-      </Text>
+        <Text
+          style={{
+            fontFamily: "Lato-Bold",
+            fontSize: 18,
+            color: "#4F37C1",
+            paddingTop: 20,
+          }}
+        >
+          Previous Game Score: {prevScore}
+        </Text>
+      </TouchableOpacity>
       <View
         style={{ flex: 12, justifyContent: "center", alignItems: "center" }}
       >

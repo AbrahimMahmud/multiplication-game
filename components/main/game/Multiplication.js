@@ -60,7 +60,7 @@ export default function Multiplication({ navigation }) {
         }}
       >
         <CountDown
-          until={20}
+          until={15}
           onFinish={() => {
             Alert.alert(
               "Time is up! Your score for this game:",
