@@ -1,3 +1,6 @@
+//START OF LANDING.JS
+
+
 import React from "react";
 import { Text, View, Button, TouchableOpacity, StyleSheet } from "react-native";
 

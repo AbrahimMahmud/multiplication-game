@@ -1,3 +1,6 @@
+//START OF APP.JS
+
+
 import React, { Component, useState } from "react";
 import { View, Text } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";

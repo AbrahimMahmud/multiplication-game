@@ -1,3 +1,5 @@
+//START OF MULTIPLICATION.JS
+
 import React, { Component, useState, useEffect } from "react";
 import {
   View,
@@ -29,6 +31,12 @@ export default function Multiplication({ navigation }) {
         .update({
           gameScore: score,
         });
+      newQuestion();
+    } else {
+      Alert.alert("Incorrect, try again!", "", [
+        { text: "OK" },
+        { text: "New Question", onPress: () => newQuestion() },
+      ]);
     }
   }
   function getRandQuestions() {
@@ -127,7 +135,6 @@ export default function Multiplication({ navigation }) {
             style={[styles.button, styles.buttonOutline]}
             onPress={() => {
               checkAnswer(answer, answ);
-              newQuestion();
             }}
           >
             <Text style={styles.buttonOutlineText}>Submit!</Text>

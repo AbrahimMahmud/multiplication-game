@@ -1,3 +1,5 @@
+//START OF REGISTER.JS
+
 import React, { Component } from "react";
 import {
   View,
